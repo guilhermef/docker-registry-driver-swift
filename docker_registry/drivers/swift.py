@@ -21,6 +21,7 @@ class Storage(driver.Base):
             user=config.swift_user,
             key=config.swift_password,
             auth_version=swift_auth_version,
+            insecure=True,
             os_options={
                 'tenant_name': config.swift_tenant_name,
                 'region_name': config.swift_region_name,
